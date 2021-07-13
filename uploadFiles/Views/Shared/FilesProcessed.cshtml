@@ -1,0 +1,23 @@
+﻿@model uploadFiles.Models.ResultsModel
+
+<div>
+    <h4>ResultsModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.outputResults)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.outputResults)
+        </dd>
+
+    </dl>
+</div>
+<h3>Log File <input type="submit" value="Downoad" /> </h3> 
+<a href="/Home/GetFile">DownLoad Log File</a>
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
